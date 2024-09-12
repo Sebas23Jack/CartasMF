@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    background-color: #ff66b2; /* Color rosado */
+    padding: 15px 0; /* Espacio arriba y abajo */
+    width: 63%; /* Asegura que el navbar ocupe todo el ancho */
+    text-align: center; /* Centra el texto */
+}
+
+.title {
+    color: white; /* Color del texto */
+    margin: 0; /* Elimina el margen por defecto del h1 */
+    font-size: 3em; /* Tamaño del texto */
+    font-family: 'Dancing Script', cursive; /* Aplica la fuente Dancing Script */
+}
+
+.container {
+    margin-top: 20px; /* Espacio arriba del contenedor */
+}
+
+/* Asegúrate de que el estilo se aplique a tu tabla */
+.table {
+    border-collapse: collapse; /* Elimina los bordes dobles y espacio entre celdas */
+    width: 100%; /* Asegura que la tabla ocupe todo el ancho disponible */
+}
+
+.table td {
+    border: none; /* Elimina el borde de las celdas */
+    padding: 10px; /* Ajusta el relleno de las celdas si es necesario */
+    color: #ff66b2; /* Color rosado */
+    font-family: 'Poiret One', sans-serif; /* Aplica la fuente Poiret One */
+    font-size: 25px; /* Tamaño del texto */
+    font-weight: bold; /* Aplica negrilla al texto */
+    text-align: center; /* Centra el texto horizontalmente en las celdas */
+    vertical-align: middle; /* Centra el texto verticalmente en las celdas */
+}
+  
+.button {
+    display: inline-block;
+    background-color: #ff66b2; /* Color rosado */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espacio dentro del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    font-size: 1em; /* Tamaño del texto en el botón */
+    margin: 5px; /* Espacio entre botones */
+}
+
+.text-overlay {
+    position: relative; /* Permite la superposición de elementos */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: 100vh; /* Ajusta la altura del contenedor al 100% del viewport */
+    background-image: url('carta.jpg'); /* Establece la imagen de fondo */
+    background-position: center; /* Centra la imagen en el div */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    display: flex; /* Usa flexbox para alinear el texto */
+    align-items: center; /* Centra el texto verticalmente */
+    justify-content: center; /* Centra el texto horizontalmente */
+    padding: 10px; /* Espacio alrededor del texto */
+    box-sizing: border-box; /* Incluye el padding en el tamaño total del contenedor */
+}
+
+#caja1 {
+    width: 50%; /* Hace que el texto ocupe todo el ancho del contenedor */
+    text-align: center; /* Centra el texto dentro del contenedor */
+    color: #bf9960; /* Color del texto (blanco para que contraste con la imagen) */
+    font-family: 'Dancing Script', cursive; /* Fuente del texto */
+    font-size: 18px; /* Tamaño del texto */
+    line-height: 1.5; /* Ajusta la altura de la línea para mejor legibilidad */
+}
+#caja2 {
+    width: 50%; /* Hace que el texto ocupe todo el ancho del contenedor */
+    text-align: center; /* Centra el texto dentro del contenedor */
+    color: #bf9960; /* Color del texto (blanco para que contraste con la imagen) */
+    font-family: 'Dancing Script', cursive; /* Fuente del texto */
+    font-size: 18px; /* Tamaño del texto */
+    line-height: 1.5; /* Ajusta la altura de la línea para mejor legibilidad */
+}
+#caja3 {
+    width: 50%; /* Hace que el texto ocupe todo el ancho del contenedor */
+    text-align: center; /* Centra el texto dentro del contenedor */
+    color: #bf9960; /* Color del texto (blanco para que contraste con la imagen) */
+    font-family: 'Dancing Script', cursive; /* Fuente del texto */
+    font-size: 18px; /* Tamaño del texto */
+    line-height: 1.5; /* Ajusta la altura de la línea para mejor legibilidad */
+}
+#caja4 {
+    width: 50%; /* Hace que el texto ocupe todo el ancho del contenedor */
+    text-align: center; /* Centra el texto dentro del contenedor */
+    color: #bf9960; /* Color del texto (blanco para que contraste con la imagen) */
+    font-family: 'Dancing Script', cursive; /* Fuente del texto */
+    font-size: 18px; /* Tamaño del texto */
+    line-height: 1.5; /* Ajusta la altura de la línea para mejor legibilidad */
+}
+
+
+

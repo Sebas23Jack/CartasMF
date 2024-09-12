@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cartas MF</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .text-overlay {
+      position: relative;
+      height: 100vh;
+      background-image: url('carta.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      box-sizing: border-box;
+      overflow: hidden; /* Evita que el texto se desborde del contenedor */
+    }
+
+    .text-overlay > div {
+      position: absolute;
+      display: none;
+      width: 100%;
+      text-align: center;
+      color: #fff;
+      font-family: 'Dancing Script', cursive;
+      font-size: 18px;
+      line-height: 1.5;
+      padding: 20px;
+    }
+
+    .text-overlay > div.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <h1 class="title">Feliz Primer Mes</h1>
+  </nav>
+  
+  <div class="container">
+    <table class="table">
+      <tbody>
+        <tr>
+            <td>Te</td>
+            <td>Amo</td>
+            <td>María</td>
+            <td>Fernanda</td>
+        </tr>
+        <tr>
+            <td><a href="#" class="button" data-target="caja1"><img src="icon1.png" alt="Icon 1"></a></td>
+            <td><a href="#" class="button" data-target="caja2"><img src="icon1.png" alt="Icon 2"></a></td>
+            <td><a href="#" class="button" data-target="caja3"><img src="icon1.png" alt="Icon 3"></a></td>
+            <td><a href="#" class="button" data-target="caja4"><img src="icon1.png" alt="Icon 4"></a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Bloque de texto encima de la imagen -->
+  <div class="text-overlay">
+    <div id="caja1" class="active">
+      Querida Mary, <br><br><br>
+      Hoy celebro el primer mes contigo, y no hay palabras suficientes para expresar lo feliz que me siento de tenerte a mi lado. Eres la razón de mi sonrisa diaria y la luz en mis días más oscuros. Me haces sentir especial de una manera que nunca había experimentado antes. 
+      <br><br>
+      Desde el momento en que entraste en mi vida, me has mostrado lo que es el verdadero amor. Me has dado un cariño sincero y una felicidad que no conocía. Eres lo mejor que me ha pasado, y no puedo esperar para pasar muchos más meses y años contigo. 
+      <br><br>
+      Gracias por ser tú, por amarme y por hacerme sentir como la persona más afortunada del mundo. No hay nada que desee más que seguir construyendo recuerdos contigo y estar a tu lado siempre. 
+      <br><br><br>
+      Con todo mi amor<br>
+      Tu Jhonnatan
+    </div>
+    <div id="caja2">
+      ¡Hola, mi amor! <br><br>
+      Solo quería recordarte cuánto te amo y cuánto significas para mí. Este primer mes juntos ha sido un sueño hecho realidad, y cada día a tu lado es una bendición. Eres la persona con la que siempre quise estar, y ahora que estás en mi vida, todo es más hermoso. 
+      <br><br>
+      A tu lado, he encontrado mi lugar en el mundo. Eres mi confidente, mi compañera y la persona que llena cada rincón de mi corazón. No importa lo que venga, sé que siempre estaré aquí para ti, porque tú eres mi todo. 
+      <br><br>
+      Cada momento contigo es precioso, y me emociono por el futuro que construiremos juntos. Te amo más de lo que las palabras pueden expresar. 
+      <br><br><br>
+      Con todo mi corazón<br>
+      Tu Jhonnatan
+    </div>
+    <div id="caja3">
+      Querida Mary, <br><br><br>
+      Este primer mes ha sido mágico, y no puedo dejar de pensar en lo afortunado que soy por tenerte en mi vida. Tu amor y apoyo me han hecho sentir completo, y cada día contigo es un regalo que atesoro profundamente. 
+      <br><br>
+      Me encanta la manera en que me haces sentir especial y amado. Eres la única que puede llenar mi corazón de tanta felicidad. Estoy deseando compartir muchos más momentos juntos y ver cómo nuestro amor sigue creciendo. 
+      <br><br>
+      Tu amor es un tesoro que valoro más que nada. No hay palabras suficientes para describir lo mucho que te quiero. Eres mi única y verdadera felicidad, y siempre seré tuyo, hoy y siempre. 
+      <br><br><br>
+      Con mucho amor<br>
+      Tu Jhonnatan
+    </div>
+    <div id="caja4">
+      Feliz primer mes, mi amor. <br><br>
+      En este tiempo juntos, has llenado mi vida de amor y alegría. Eres el sueño hecho realidad y la persona con la que quiero pasar cada día. Tu cariño y dedicación me han mostrado lo que significa el verdadero amor, y no puedo imaginar mi vida sin ti. 
+      <br><br>
+      Gracias por ser la mejor novia, por entenderme y por amarme con todo tu ser. Me has ganado el corazón de una manera que nunca creí posible, y solo quiero estar a tu lado para siempre. Eres mi todo, y no hay nada que desee más que seguir construyendo nuestra historia juntos. 
+      <br><br>
+      Te amo más de lo que las palabras pueden decir, y me siento tan afortunado de tenerte en mi vida. Eres mía, y siempre lo serás. 
+      <br><br><br>
+      Con todo mi amor,<br>
+      Tu Jhonnatan
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const buttons = document.querySelectorAll('.button');
+      const textDivs = document.querySelectorAll('.text-overlay > div');
+
+      buttons.forEach(button => {
+        button.addEventListener('click', function(event) {
+          event.preventDefault(); // Prevenir el comportamiento por defecto del enlace
+
+          // Obtener el ID del div a mostrar
+          const targetId = this.getAttribute('data-target');
+
+          // Ocultar todos los divs
+          textDivs.forEach(div => {
+            div.classList.remove('active');
+          });
+
+          // Mostrar el div objetivo
+          const targetDiv = document.getElementById(targetId);
+          if (targetDiv) {
+            targetDiv.classList.add('active');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
